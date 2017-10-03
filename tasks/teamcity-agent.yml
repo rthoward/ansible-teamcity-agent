@@ -49,7 +49,6 @@
   template:
     src: "teamcity-agent.service.j2"
     dest: "/lib/systemd/system/teamcity-agent.service"
-    #mode: 0644
   when: "ansible_service_mgr == 'systemd'"
 
 - name: "Save agent auth token"
